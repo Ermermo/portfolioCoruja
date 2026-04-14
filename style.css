@@ -1108,8 +1108,8 @@ footer p {
 
   .modal-close {
     position: absolute;
-    top: 12px;
-    right: 12px;
+    top: 120px;
+    right: 20px;
     z-index: 999;
   }
 
