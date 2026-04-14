@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Coruja Designer</title>
+  <link rel="icon" href="img/ico/icone.jpg">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap"
+    rel="stylesheet" />
+
+  <!-- Estilos -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- =============================================
+       NAVEGAÇÃO
+  ============================================== -->
+  <nav id="navbar">
+    <a class="nav-logo" href="#hero">Coruja<span>.</span></a>
+
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#categorias">Trabalhos</a></li>
+      <li><a href="#sobre">Sobre</a></li>
+      <li><a href="#">Contato</a></li>
+    </ul>
+
+    <button class="nav-burger" id="burger" aria-label="Abrir menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </nav>
+
+  <!-- =============================================
+       HERO
+  ============================================== -->
+  <section id="hero">
+    <p class="hero-eyebrow">Designer Gráfico · Social Media</p>
+
+    <h1 class="hero-title">
+      Arte que<br>
+      <span class="line2">Converte.</span>
+    </h1>
+
+    <p class="hero-sub">
+      Criando peças visuais que fazem seu público parar, olhar e agir.
+      Do esboço ao pixel perfeito.
+    </p>
+
+    <a href="#categorias" class="btn-primary" id="heroBtn">
+      Ver trabalhos
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+        stroke-linecap="round" stroke-linejoin="round">
+        <line x1="5" y1="12" x2="19" y2="12" />
+        <polyline points="12 5 19 12 12 19" />
+      </svg>
+    </a>
+
+    <div class="hero-stats">
+      <div class="stat">
+        <div class="stat-num">120+</div>
+        <div class="stat-label">Projetos</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num">80+</div>
+        <div class="stat-label">Clientes</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num">4,5★</div>
+        <div class="stat-label">Avaliação</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =============================================
+       CATEGORIAS
+  ============================================== -->
+  <section id="categorias">
+    <p class="section-label reveal">Portfólio</p>
+    <h2 class="section-title reveal">Escolha uma<br>categoria</h2>
+
+    <div class="cat-grid">
+
+      <!-- YouTube Pack -->
+      <div class="cat-card reveal" data-cat="youtube" tabindex="0" role="button" aria-label="Ver YouTube Pack">
+        <div class="cat-bg"></div>
+        <div class="cat-art">
+          <svg width="220" height="220" viewBox="0 0 220 220" fill="none">
+            <circle cx="110" cy="110" r="90" stroke="var(--accent3)" stroke-width="1" stroke-dasharray="8 6" />
+            <circle cx="110" cy="110" r="60" fill="rgba(0,201,167,.08)" stroke="var(--accent3)" stroke-width=".5" />
+            <polygon points="95,80 145,110 95,140" fill="var(--accent3)" opacity=".7" />
+            <circle cx="110" cy="30" r="4" fill="var(--accent3)" opacity=".5" />
+            <circle cx="190" cy="110" r="4" fill="var(--accent3)" opacity=".3" />
+            <circle cx="30" cy="110" r="4" fill="var(--accent3)" opacity=".4" />
+          </svg>
+        </div>
+        <div class="cat-glass"></div>
+        <div class="cat-arrow">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round">
+            <line x1="5" y1="12" x2="19" y2="12" />
+            <polyline points="12 5 19 12 12 19" />
+          </svg>
+        </div>
+        <div class="cat-info">
+          <span class="cat-tag">Conteúdo</span>
+          <div class="cat-name">YouTube Pack</div>
+          <div class="cat-count">6 projetos</div>
+        </div>
+      </div>
+
+      <!-- Artes Esportivas -->
+      <div class="cat-card reveal" data-cat="esportes" tabindex="0" role="button" aria-label="Ver Artes Esportivas">
+        <div class="cat-art">
+          <svg width="220" height="220" viewBox="0 0 220 220" fill="none">
+            <polygon points="110,20 200,80 170,180 50,180 20,80" stroke="var(--accent)" stroke-width="1"
+              fill="rgba(232,255,71,.04)" stroke-dasharray="6 4" />
+            <circle cx="110" cy="110" r="30" fill="rgba(232,255,71,.07)" stroke="var(--accent)" stroke-width=".8" />
+            <line x1="110" y1="20" x2="110" y2="200" stroke="var(--accent)" stroke-width=".4" stroke-dasharray="4 8" />
+            <line x1="20" y1="110" x2="200" y2="110" stroke="var(--accent)" stroke-width=".4" stroke-dasharray="4 8" />
+            <circle cx="110" cy="110" r="8" fill="var(--accent)" opacity=".5" />
+          </svg>
+        </div>
+        <div class="cat-glass"></div>
+        <div class="cat-arrow">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round">
+            <line x1="5" y1="12" x2="19" y2="12" />
+            <polyline points="12 5 19 12 12 19" />
+          </svg>
+        </div>
+        <div class="cat-info">
+          <span class="cat-tag">Esporte</span>
+          <div class="cat-name">Artes Esportivas</div>
+          <div class="cat-count">4 projetos</div>
+        </div>
+        <img class="cat-bg" src="img/categorias/esportivas.webp">
+      </div>
+
+      <!-- E-Sports -->
+      <div class="cat-card reveal" data-cat="esports" tabindex="0" role="button" aria-label="Ver E-Sports">
+        <div class="cat-art">
+          <svg width="220" height="220" viewBox="0 0 220 220" fill="none">
+            <rect x="40" y="70" width="140" height="90" rx="12" stroke="var(--accent2)" stroke-width="1"
+              fill="rgba(255,107,53,.05)" stroke-dasharray="5 4" />
+            <rect x="60" y="90" width="40" height="50" rx="6" stroke="var(--accent2)" stroke-width=".6"
+              fill="rgba(255,107,53,.04)" />
+            <rect x="120" y="90" width="40" height="50" rx="6" stroke="var(--accent2)" stroke-width=".6"
+              fill="rgba(255,107,53,.04)" />
+            <circle cx="80" cy="115" r="10" stroke="var(--accent2)" stroke-width=".8" fill="none" />
+            <line x1="80" y1="107" x2="80" y2="123" stroke="var(--accent2)" stroke-width="1.5" />
+            <line x1="72" y1="115" x2="88" y2="115" stroke="var(--accent2)" stroke-width="1.5" />
+            <circle cx="140" cy="115" r="4" fill="var(--accent2)" opacity=".6" />
+            <circle cx="126" cy="115" r="3" fill="var(--accent2)" opacity=".3" />
+            <circle cx="154" cy="115" r="3" fill="var(--accent2)" opacity=".3" />
+            <circle cx="140" cy="101" r="3" fill="var(--accent2)" opacity=".3" />
+            <circle cx="140" cy="129" r="3" fill="var(--accent2)" opacity=".3" />
+          </svg>
+        </div>
+        <div class="cat-glass"></div>
+        <div class="cat-arrow">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round">
+            <line x1="5" y1="12" x2="19" y2="12" />
+            <polyline points="12 5 19 12 12 19" />
+          </svg>
+        </div>
+        <div class="cat-info">
+          <span class="cat-tag">Gaming</span>
+          <div class="cat-name">E-Sports</div>
+          <div class="cat-count">4 projetos</div>
+        </div>
+        <img class="cat-bg" src="img/categorias/gaming.webp"></div>
+      </div>
+
+    </div>
+    <!-- <div class="cat-grid">
+
+      <div class="cat-card reveal" data-cat="youtube" tabindex="0" role="button" aria-label="Ver YouTube Pack">
+        <div class="cat-bg"></div>
+        <div class="cat-art">
+          <svg width="220" height="220" viewBox="0 0 220 220" fill="none">
+            <circle cx="110" cy="110" r="90" stroke="var(--accent3)" stroke-width="1" stroke-dasharray="8 6" />
+            <circle cx="110" cy="110" r="60" fill="rgba(0,201,167,.08)" stroke="var(--accent3)" stroke-width=".5" />
+            <polygon points="95,80 145,110 95,140" fill="var(--accent3)" opacity=".7" />
+            <circle cx="110" cy="30" r="4" fill="var(--accent3)" opacity=".5" />
+            <circle cx="190" cy="110" r="4" fill="var(--accent3)" opacity=".3" />
+            <circle cx="30" cy="110" r="4" fill="var(--accent3)" opacity=".4" />
+          </svg>
+        </div>
+        <div class="cat-glass"></div>
+        <div class="cat-arrow">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round">
+            <line x1="5" y1="12" x2="19" y2="12" />
+            <polyline points="12 5 19 12 12 19" />
+          </svg>
+        </div>
+        <div class="cat-info">
+          <span class="cat-tag">Conteúdo</span>
+          <div class="cat-name">YouTube Pack</div>
+          <div class="cat-count">6 projetos</div>
+        </div>
+      </div>
+
+      <div class="cat-card reveal" data-cat="esportes" tabindex="0" role="button" aria-label="Ver Artes Esportivas">
+        <div class="cat-art">
+          <svg width="220" height="220" viewBox="0 0 220 220" fill="none">
+            <polygon points="110,20 200,80 170,180 50,180 20,80" stroke="var(--accent)" stroke-width="1"
+              fill="rgba(232,255,71,.04)" stroke-dasharray="6 4" />
+            <circle cx="110" cy="110" r="30" fill="rgba(232,255,71,.07)" stroke="var(--accent)" stroke-width=".8" />
+            <line x1="110" y1="20" x2="110" y2="200" stroke="var(--accent)" stroke-width=".4" stroke-dasharray="4 8" />
+            <line x1="20" y1="110" x2="200" y2="110" stroke="var(--accent)" stroke-width=".4" stroke-dasharray="4 8" />
+            <circle cx="110" cy="110" r="8" fill="var(--accent)" opacity=".5" />
+          </svg>
+        </div>
+        <div class="cat-glass"></div>
+        <div class="cat-arrow">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round">
+            <line x1="5" y1="12" x2="19" y2="12" />
+            <polyline points="12 5 19 12 12 19" />
+          </svg>
+        </div>
+        <div class="cat-info">
+          <span class="cat-tag">Esporte</span>
+          <div class="cat-name">Artes Esportivas</div>
+          <div class="cat-count">5 projetos</div>
+        </div>
+        <img class="cat-bg" src="img/categorias/esportivas.jpg">
+      </div>
+
+      <div class="cat-card reveal" data-cat="esports" tabindex="0" role="button" aria-label="Ver E-Sports">
+        <div class="cat-art">
+          <svg width="220" height="220" viewBox="0 0 220 220" fill="none">
+            <rect x="40" y="70" width="140" height="90" rx="12" stroke="var(--accent2)" stroke-width="1"
+              fill="rgba(255,107,53,.05)" stroke-dasharray="5 4" />
+            <rect x="60" y="90" width="40" height="50" rx="6" stroke="var(--accent2)" stroke-width=".6"
+              fill="rgba(255,107,53,.04)" />
+            <rect x="120" y="90" width="40" height="50" rx="6" stroke="var(--accent2)" stroke-width=".6"
+              fill="rgba(255,107,53,.04)" />
+            <circle cx="80" cy="115" r="10" stroke="var(--accent2)" stroke-width=".8" fill="none" />
+            <line x1="80" y1="107" x2="80" y2="123" stroke="var(--accent2)" stroke-width="1.5" />
+            <line x1="72" y1="115" x2="88" y2="115" stroke="var(--accent2)" stroke-width="1.5" />
+            <circle cx="140" cy="115" r="4" fill="var(--accent2)" opacity=".6" />
+            <circle cx="126" cy="115" r="3" fill="var(--accent2)" opacity=".3" />
+            <circle cx="154" cy="115" r="3" fill="var(--accent2)" opacity=".3" />
+            <circle cx="140" cy="101" r="3" fill="var(--accent2)" opacity=".3" />
+            <circle cx="140" cy="129" r="3" fill="var(--accent2)" opacity=".3" />
+          </svg>
+        </div>
+        <div class="cat-glass"></div>
+        <div class="cat-arrow">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round">
+            <line x1="5" y1="12" x2="19" y2="12" />
+            <polyline points="12 5 19 12 12 19" />
+          </svg>
+        </div>
+        <div class="cat-info">
+          <span class="cat-tag">Gaming</span>
+          <div class="cat-name">E-Sports</div>
+          <div class="cat-count">4 projetos</div>
+        </div>
+        <img class="cat-bg" src="img/categorias/esports.jpg "></div>
+      </div>
+
+    </div> -->
+  </section>
+
+  <!-- =============================================
+       PROJETOS (injetado dinamicamente pelo JS)
+  ============================================== -->
+  <section id="projetos">
+    <div class="proj-header">
+      <div>
+        <p class="section-label" id="projLabel">Categoria</p>
+        <h2 class="section-title" id="projTitle" style="margin-bottom:0">Projetos</h2>
+      </div>
+      <button class="btn-back" id="btnBack">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+          stroke-linecap="round">
+          <polyline points="15 18 9 12 15 6" />
+        </svg>
+        Voltar
+      </button>
+    </div>
+    <div class="proj-grid" id="projGrid"></div>
+  </section>
+
+  <!-- =============================================
+       SOBRE
+  ============================================== -->
+  <section id="sobre">
+
+    <div class="sobre-visual reveal">
+      <div class="sobre-avatar">
+        <img src="img/sua-foto.jpg" alt="Minha foto">
+        <div class="sobre-badge">
+          <span>5+</span>
+          Anos de<br>experiência
+        </div>
+      </div>
+    </div>
+
+    <div class="sobre-text reveal">
+      <p class="section-label">Sobre</p>
+      <h2 class="section-title">Criatividade<br>com propósito.</h2>
+      <p class="sobre-desc">
+        Designer gráfico especializado em social media empresarial,
+        e conteúdos para o universo gaming e esportivo. Cada projeto é tratado com
+        atenção obsessiva aos detalhes — porque o visual certo transforma visitantes
+        em clientes.
+      </p>
+      <div class="diffs">
+        <div class="diff-item">
+          <div class="diff-icon" style="background:rgba(232,255,71,.1);">⚡</div>
+          <div class="diff-content">
+            <strong>Entregas rápidas</strong>
+            <span>Prazos respeitados, sem comprometer a qualidade.</span>
+          </div>
+        </div>
+        <div class="diff-item">
+          <div class="diff-icon" style="background:rgba(0,201,167,.1);">🎯</div>
+          <div class="diff-content">
+            <strong>Foco em resultado</strong>
+            <span>Design criado para converter e engajar seu público.</span>
+          </div>
+        </div>
+        <div class="diff-item">
+          <div class="diff-icon" style="background:rgba(255,107,53,.1);">✦</div>
+          <div class="diff-content">
+            <strong>Identidade única</strong>
+            <span>Nenhum template. Cada projeto nasce do zero, para você.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- =============================================
+       FOOTER
+  ============================================== -->
+  <footer>
+    <div class="footer-logo">Coruja<span>.</span></div>
+    <p>© 2025 Studio Design. Todos os direitos reservados.</p>
+    <p>Feito com ♥ e pixels perfeitos.</p>
+  </footer>
+
+  <!-- =============================================
+       MODAL
+  ============================================== -->
+  <div class="modal-overlay" id="modalOverlay" role="dialog" aria-modal="true">
+    <div class="modal-box">
+
+      <button class="modal-close" id="modalClose" aria-label="Fechar modal">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+          stroke-linecap="round">
+          <line x1="18" y1="6" x2="6" y2="18" />
+          <line x1="6" y1="6" x2="18" y2="18" />
+        </svg>
+      </button>
+
+      <div class="carousel" id="carousel">
+        <!-- slides injetados pelo JS -->
+
+        <button class="carousel-btn prev" id="prevBtn" aria-label="Slide anterior">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round">
+            <polyline points="15 18 9 12 15 6" />
+          </svg>
+        </button>
+
+        <button class="carousel-btn next" id="nextBtn" aria-label="Próximo slide">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round">
+            <line x1="5" y1="12" x2="19" y2="12" />
+            <polyline points="12 5 19 12 12 19" />
+          </svg>
+        </button>
+
+        <div class="carousel-dots" id="carouselDots"></div>
+      </div>
+
+      <div class="modal-info">
+        <div>
+          <div class="modal-title" id="modalTitle">Projeto</div>
+          <div class="modal-cat" id="modalCat">Categoria</div>
+        </div>
+        <div class="modal-counter" id="modalCounter">1 / 1</div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- =============================================
+       BOTÃO FLUTUANTE WHATSAPP
+  ============================================== -->
+  <a href="https://wa.me/5581984215875" class="float-btn" aria-label="Fale no WhatsApp">
+    <span class="float-tooltip">Fale comigo!</span>
+    <svg width="28" height="28" viewBox="0 0 24 24" fill="white">
+      <path
+        d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+    </svg>
+  </a>
+
+  <!-- JavaScript (carregado no final do body para garantir que o DOM já existe) -->
+  <script src="main.js"></script>
+
+</body>
+
+</html>
