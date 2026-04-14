@@ -183,6 +183,17 @@ navLinks.querySelectorAll('a').forEach(a => {
   });
 });
 
+// Fecha ao clicar fora do menu
+document.addEventListener('click', (e) => {
+  if (
+    navLinks.classList.contains('open') &&
+    !navLinks.contains(e.target) &&
+    !burger.contains(e.target)
+  ) {
+    navLinks.classList.remove('open');
+  }
+});
+
 /* ============================================
    HERO CTA — scroll suave até categorias
 ============================================ */
@@ -319,6 +330,14 @@ function openModal(proj, catLabel) {
     if (imgSrc) {
       // Imagem real
       slide.innerHTML = `<img src="${imgSrc}" alt="${proj.nome} — imagem ${i + 1}">`;
+
+      // verifica altura da imagem após carregar
+      const img = slide.querySelector('img');
+      img.addEventListener('load', () => {
+        if (img.naturalHeight > 1500) {
+          img.style.objectPosition = 'bottom';
+        }
+      });
     } else {
       // Placeholder SVG
       slide.innerHTML = `
