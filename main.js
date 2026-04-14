@@ -167,7 +167,20 @@ burger.addEventListener('click', () => {
 
 // Fecha o menu mobile ao clicar em um link
 navLinks.querySelectorAll('a').forEach(a => {
-  a.addEventListener('click', () => navLinks.classList.remove('open'));
+  a.addEventListener('click', (e) => {
+    const href = a.getAttribute('href');
+    navLinks.classList.remove('open');
+
+    if (href && href.startsWith('#')) {
+      e.preventDefault();
+      const target = document.querySelector(href);
+      if (target) {
+        setTimeout(() => {
+          target.scrollIntoView({ behavior: 'smooth' });
+        }, 60); // pequeno delay para o menu fechar antes de rolar
+      }
+    }
+  });
 });
 
 /* ============================================
@@ -212,7 +225,7 @@ function openCategory(cat) {
     const card = document.createElement('div');
     card.className = 'proj-card';
     card.style.animationDelay = `${i * 0.08}s`;
-    card.style.setProperty('--cor', proj.cor);
+    // card.style.setProperty('--cor', proj.cor);
     card.setAttribute('tabindex', '0');
     card.setAttribute('role', 'button');
     card.setAttribute('aria-label', `Ver projeto ${proj.nome}`);
