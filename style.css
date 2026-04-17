@@ -1041,31 +1041,89 @@ section {
 ============================================ */
 footer {
   border-top: 1px solid var(--border);
-  padding: 40px 48px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 16px;
+  padding: 60px 48px 32px;
   max-width: 1360px;
   margin: 0 auto;
 }
 
-footer p {
-  font-size: .8rem;
-  color: var(--muted);
+.footer-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  gap: 48px;
+  margin-bottom: 48px;
 }
 
-.footer-logo {
+.footer-brand .footer-logo {
   font-family: var(--font-head);
   font-weight: 800;
-  font-size: 1.1rem;
+  font-size: 1.4rem;
   color: var(--text);
+  margin-bottom: 16px;
+}
+.footer-logo span { color: var(--accent); }
+
+.footer-desc {
+  font-size: .85rem;
+  color: var(--muted);
+  line-height: 1.7;
+  margin-bottom: 24px;
+  max-width: 280px;
 }
 
-.footer-logo span {
-  color: var(--accent);
+.footer-socials {
+  display: flex;
+  gap: 12px;
 }
+.footer-socials a {
+  width: 40px; height: 40px;
+  border-radius: 10px;
+  background: var(--glass);
+  border: 1px solid var(--border);
+  display: flex; align-items: center; justify-content: center;
+  color: var(--muted);
+  text-decoration: none;
+  transition: background .25s, color .25s, border-color .25s;
+}
+.footer-socials a:hover {
+  background: var(--glass-b);
+  color: var(--accent);
+  border-color: rgba(232,255,71,.2);
+}
+
+.footer-col-title {
+  font-family: var(--font-head);
+  font-weight: 700;
+  font-size: .8rem;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: var(--text);
+  margin-bottom: 20px;
+}
+
+.footer-col ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.footer-col ul a {
+  font-size: .85rem;
+  color: var(--muted);
+  text-decoration: none;
+  transition: color .25s;
+}
+.footer-col ul a:hover { color: var(--accent); }
+
+.footer-bottom {
+  border-top: 1px solid var(--border);
+  padding-top: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.footer-bottom p { font-size: .78rem; color: var(--muted); }
 
 /* ============================================
    SCROLL REVEAL
@@ -1194,8 +1252,19 @@ footer p {
     right: 16px;
   }
 
-  footer {
-    padding: 32px 24px;
+  footer { padding: 48px 24px 24px; }
+
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+  }
+
+  .footer-brand {
+    grid-column: 1 / -1;
+  }
+
+  .footer-desc {
+    max-width: 100%;
   }
 
   .hero-stats {
@@ -1239,6 +1308,25 @@ footer p {
     right: 20px;
     width: 52px;
     height: 52px;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;  /* mantém 2 colunas no mobile */
+    gap: 24px;
+  }
+
+  .footer-brand {
+    grid-column: 1 / -1;
+  }
+
+  .footer-col-title {
+    font-size: .75rem;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
   }
 }
 
