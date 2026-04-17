@@ -11,34 +11,49 @@ const projetos = {
       preview: "img/socialmedia/lojacamisas/lojacamisas-preview.webp",
       cor: "#00c9a7",
       imagens: [
-        "img/youtube/jogos/jogos1.jpg",
-        "img/youtube/jogos/jogos2.jpg",
-        "img/youtube/jogos/jogos3.jpg",
-        "img/youtube/jogos/jogos4.jpg",
-        "img/youtube/jogos/jogos5.jpg",
+        "img/socialmedia/lojacamisas/lojacamisas1.webp",
+        "img/socialmedia/lojacamisas/lojacamisas2.webp",
+        "img/socialmedia/lojacamisas/lojacamisas3.webp",
+        "img/socialmedia/lojacamisas/lojacamisas4.webp"
       ],
-      desc: "Thumbnails e banners para o seu canal de jogos"
+      desc: "Artes para anúncios de loja e-commerce"
     },
     {
-      nome: "Fut Champions",
-      preview: null,
+      nome: "Odonto Clínica",
+      preview: "img/socialmedia/odontoclinica/odontoclinica-preview.webp",
       cor: "#e8ff47",
-      imagens: [null, null],
-      desc: "Identidade visual de canal esportivo"
+      imagens: [
+        "img/socialmedia/odontoclinica/odontoclinica1.webp",
+        "img/socialmedia/odontoclinica/odontoclinica3.webp",
+        "img/socialmedia/odontoclinica/odontoclinica3.webp",
+        "img/socialmedia/odontoclinica/odontoclinica4.webp",
+        "img/socialmedia/odontoclinica/odontoclinica5.webp"
+      ],
+      desc: "Postagem para Clinica Dentária"
     },
     {
-      nome: "PixelGod",
-      preview: null,
+      nome: "Dynamis Agency",
+      preview: "img/socialmedia/dynamis/dynamis-preview.webp",
       cor: "#a78bfa",
-      imagens: [null, null, null],
-      desc: "Pack gamer — overlays e thumbnails"
+      imagens: [
+        "img/socialmedia/dynamis/dynamis1.webp",
+        "img/socialmedia/dynamis/dynamis2.webp",
+        "img/socialmedia/dynamis/dynamis3.webp",
+        "img/socialmedia/dynamis/dynamis4.webp"
+      ],
+      desc: "Imagens para agência de design"
     },
     {
-      nome: "BeatDrop",
-      preview: null,
+      nome: "Porto Zero Agência",
+      preview: "img/socialmedia/portozero/portozero-preview.webp",
       cor: "#f472b6",
-      imagens: [null, null],
-      desc: "Canal de música — arte e motion"
+      imagens: [
+        "img/socialmedia/portozero/portozero1.webp",
+        "img/socialmedia/portozero/portozero2.webp",
+        "img/socialmedia/portozero/portozero3.webp",
+        "img/socialmedia/portozero/portozero4.webp"
+      ],
+      desc: "Imagens para agência de design"
     }
   ],
   esportes: [
@@ -54,7 +69,7 @@ const projetos = {
       desc: "Identidade visual de clube"
     },
     {
-      nome: "MATCHDAY",
+      nome: "Matchday",
       preview: "img/esportes/players/players-preview.webp",
       cor: "#ffffff",
       imagens: [
@@ -66,7 +81,7 @@ const projetos = {
       desc: "Artes Matchday para jogadores"
     },
     {
-      nome: "CENTRAL CARUARU",
+      nome: "Central Caruaru",
       preview: "img/esportes/centralcaruaru/centralcaruaru-preview.webp",
       cor: "#ffffff",
       imagens: [
@@ -76,7 +91,7 @@ const projetos = {
       desc: "Identidade visual de clube"
     },
     {
-      nome: "TORCIDA",
+      nome: "Torcida",
       preview: "img/esportes/torcida/torcida-preview.webp",
       cor: "#04e9ed",
       imagens: [
@@ -113,7 +128,7 @@ const projetos = {
       desc: "Social Media completa"
     },
     {
-      nome: "REAL HUNTERS",
+      nome: "Real Hunters",
       preview: "img/esports/realhunters/realhunters-preview.webp",
       cor: "#63E0DE",
       imagens: [
