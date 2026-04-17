@@ -5,10 +5,10 @@
    imagens: ["img/arte1.jpg", "img/arte2.jpg"]
 ============================================ */
 const projetos = {
-  youtube: [
+  socialmedia: [
     {
-      nome: "Jogos",
-      preview: "img/youtube/jogos/jogos1.jpg",
+      nome: "Fut Champions",
+      preview: "img/socialmedia/lojacamisas/lojacamisas-preview.webp",
       cor: "#00c9a7",
       imagens: [
         "img/youtube/jogos/jogos1.jpg",
@@ -20,7 +20,7 @@ const projetos = {
       desc: "Thumbnails e banners para o seu canal de jogos"
     },
     {
-      nome: "SportzTV",
+      nome: "Fut Champions",
       preview: null,
       cor: "#e8ff47",
       imagens: [null, null],
@@ -39,20 +39,6 @@ const projetos = {
       cor: "#f472b6",
       imagens: [null, null],
       desc: "Canal de música — arte e motion"
-    },
-    {
-      nome: "DevTalk",
-      preview: null,
-      cor: "#38bdf8",
-      imagens: [null, null, null],
-      desc: "Pack tech minimalista"
-    },
-    {
-      nome: "Vlog Daily",
-      preview: null,
-      cor: "#fb923c",
-      imagens: [null, null],
-      desc: "Thumbnails lifestyle premium"
     }
   ],
   esportes: [
@@ -215,7 +201,7 @@ const projTitle = document.getElementById('projTitle');
 const btnBack = document.getElementById('btnBack');
 
 const catNames = {
-  youtube: { label: 'Conteúdo Digital', title: 'YouTube Pack' },
+  youtube: { label: 'Conteúdo Digital', title: 'Artes Social Media' },
   esportes: { label: 'Esporte', title: 'Artes Esportivas' },
   esports: { label: 'Gaming', title: 'E-Sports' }
 };
