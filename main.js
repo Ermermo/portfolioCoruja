@@ -216,7 +216,7 @@ const projTitle = document.getElementById('projTitle');
 const btnBack = document.getElementById('btnBack');
 
 const catNames = {
-  youtube: { label: 'Conteúdo Digital', title: 'Artes Social Media' },
+  socialmedia: { label: 'Social Media', title: 'Social Media' },
   esportes: { label: 'Esporte', title: 'Artes Esportivas' },
   esports: { label: 'Gaming', title: 'E-Sports' }
 };
